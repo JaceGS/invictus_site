@@ -1,0 +1,60 @@
+body {
+    background:rgb(20,20,26);
+    color: rgb(220,220,220);
+    font-family: 'Segoe UI', monospace;
+}
+
+.overlay {
+    pointer-events: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    color: rgb(214, 149, 149)
+    opacity: 1;
+}
+
+.overlay.hidden {
+    opacity: 0;
+    transition: linear 0.25s;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main {
+    text-align: center;
+}
+
+.controls{
+    position:absolute;
+    text-align: center;
+    bottom: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.controls a {
+    color: #CDCDCD;
+    text-decoration: none;
+    opacity: 0.4;
+}
+
+.modal {
+    position: absolute;
+    width: 500px;
+    top: -500px;
+    min-height: 200px;
+    visibility: hidden;
+    left: 50%;
+
+    border: 1px solid red;
+    background: black;
+
+    transform: translate(-50%, -50%);
+}
