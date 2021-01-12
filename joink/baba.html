@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://static.actrix.dev/joink/index/s.css">
+        <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/TqcvJW4.gif">    
+        <meta name="og:title" content="invictus">
+        <meta name="og:type" content="website">
+        <meta name="og:description" content="private gamesense aa &amp; dt lua">
+        <meta name="og:url" content="https://invictus.black">
+        <meta name="og:image" content="https://i.imgur.com/kiuLAyK.gif">
+        <meta name="theme-color" content="#D69595">
+        
+        <script type="text/javascript" id="custom-useragent-string-page-script"></script>
+        <script src="https://static.actrix.dev/joink/index/rythm.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://shoppy.gg/api/embed.js"></script>
+    </head>
+
+    <body>
+        <div id="particles-js"></div>
+        <div class="main center">
+            <div style="font-size: 40px;" class="logo-blur logo-bass"><span class="logo-neon">invictus.black</span></div>
+        </div>
+        <div class="controls">
+            <a href="" data-shoppy-product="9nLGxlM">Purchase</a><br>
+            <a href="https://www.youtube.com/channel/UCYGQKAfynUanm7vks60BgJA">Showcase</a>
+        </div>
+        </section>
+        
+        <script>
+            var rythm;
+            var initialized = false;
+
+            var init_rythm = () => {
+                rythm = new Rythm();
+                rythm.addRythm('logo-bass', 'pulse', 0, 7);
+                rythm.addRythm('logo-neon', 'textNeon', 80, 150, {
+                    to: [214, 149, 149],
+                    from: [100, 70, 70]
+                });
+
+                rythm.addRythm('logo-blur', 'blur', 80, 150, {
+                    min: 0,
+                    max: 4
+                });
+            };
+            
+            var play = () => {
+                if (initialized)
+                    return;
+                init_rythm();
+                rythm.setMusic("https://static.actrix.dev/joink/static/bb.mp3");
+                rythm.start();
+                $(".overlay").addClass("hidden");
+                initialized = true;
+            };
+
+            window.onclick = () => {
+                play();
+            }
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 160,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 1,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 1,
+                            "opacity_min": 0,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 4,
+                            "size_min": 0.3,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffc9ef",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 1,
+                        "direction": "none",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 600
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 250,
+                            "size": 3,
+                            "duration": 2,
+                            "opacity": 0,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 10,
+                            "duration": 1
+                        },
+                        "push": {
+                            "distance": 400,
+                            "duration": 0.4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        </script>
+    </body>
+</html>
