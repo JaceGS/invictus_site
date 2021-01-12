@@ -20,7 +20,7 @@
     <body>
         <div id="particles-js"></div>
         <div class="main center">
-            <div style="font-size: 40px;" class="logo-blur logo-bass logo-color"><span class="logo-neon">invictus.black</span></div>
+            <div style="font-size: 40px;" class="logo-blur logo-bass"><span class="logo-neon">invictus.black</span></div>
         </div>
         <div class="controls">
             <a href="" data-shoppy-product="9nLGxlM">Purchase</a><br>
@@ -36,14 +36,9 @@
                 rythm = new Rythm();
                 rythm.addRythm('logo-bass', 'pulse', 0, 7);
                 rythm.addRythm('logo-neon', 'textNeon', 80, 150, {
-                    to: [214, 149, 149],
-                    from: [100, 70, 70]
-                });
-                rythm.addRythm('logo-color', 'color', 50, 100, {
                   from: [0,0,255],
                   to:[255,255,255]
-                })
-
+                });
                 rythm.addRythm('logo-blur', 'blur', 80, 150, {
                     min: 0,
                     max: 4
