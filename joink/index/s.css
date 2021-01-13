@@ -1,7 +1,7 @@
 
 body {
-    background: rgb(142,48,48);
-    background: radial-gradient(circle, rgba(142,48,48,1) 0%, rgba(49,101,113,1) 48%, rgba(247,117,152,1) 100%); 
+    background: rgb(29,26,26);
+    background: radial-gradient(circle, rgba(29,26,26,1) 0%, rgba(22,46,51,1) 48%, rgba(85,37,50,1) 100%);
     font-family: 'Segoe UI', monospace;
 }
 
