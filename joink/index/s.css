@@ -2,6 +2,7 @@
 body {
     background: rgb(29,26,26);
     background: radial-gradient(circle, rgba(29,26,26,1) 0%, rgba(22,46,51,1) 48%, rgba(85,37,50,1) 100%);
+    color: rgb(220,220,220);
     font-family: 'Segoe UI', monospace;
 }
 
