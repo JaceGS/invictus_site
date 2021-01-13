@@ -1,6 +1,6 @@
 
 body {
-    background:rgb(20,20,26);
+    background:rgb(94,50,71);
     color: rgb(220,220,220);
     font-family: 'Segoe UI', monospace;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .controls a {
-    color: #CDCDCD;
+    color: #F5CBEA;
     text-decoration: none;
     opacity: 0.4;
 }
