@@ -41,10 +41,26 @@ body {
     transform: translateX(-50%);
 }
 
+
+
 .controls a {
     color: #ffc2ef;
     text-decoration: none;
     opacity: 0.6;
+}
+
+.copyright{
+    position:absolute;
+    text-align: center;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.copyright a {
+    color: #ffc2ef;
+    text-decoration: none;
+    opacity: 0.3;
 }
 
 .modal {
