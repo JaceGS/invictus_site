@@ -1,6 +1,6 @@
 
 body {
-    background:rgb(94,50,71);
+    background:rgb(54,28,40);
     color: rgb(220,220,220);
     font-family: 'Segoe UI', monospace;
 }
@@ -43,7 +43,7 @@ body {
 .controls a {
     color: #F5CBEA;
     text-decoration: none;
-    opacity: 0.4;
+    opacity: 0.8;
 }
 
 .modal {
